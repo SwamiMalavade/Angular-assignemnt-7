@@ -18,8 +18,12 @@ import { SecondComponentComponent } from './second-component/second-component.co
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  public value: any;
-  public fun(): string {
-    return (this.value = 'Educating for a better tomorrow!');
+  public value: string = 'Marvellous Infosystems';
+  public changedValue: string = '';
+
+  public fun(type: any): any {
+    if (type == 'upper') return (this.changedValue = this.value.toUpperCase());
+    if (type == 'lower')
+      return (this.changedValue = this.value.toLocaleLowerCase());
   }
 }

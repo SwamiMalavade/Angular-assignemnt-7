@@ -1,7 +1,8 @@
 <h1>
-  <button (click)="fun()">Click me!</button>
+  <button (click)="fun('upper')">UPPER CASE</button>
+  <button (click)="fun('lower')">LOWER CASE</button>
 </h1>
 <h2>
-  {{value}}
+  {{ changedValue }}
 </h2>
 <router-outlet></router-outlet>
