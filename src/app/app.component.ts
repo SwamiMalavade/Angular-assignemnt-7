@@ -8,10 +8,18 @@ import { SecondComponentComponent } from './second-component/second-component.co
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, SecondComponentComponent, FirstComponentComponent],
+  imports: [
+    CommonModule,
+    RouterOutlet,
+    SecondComponentComponent,
+    FirstComponentComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrl: './app.component.css',
 })
 export class AppComponent {
-  title = 'assignment-7';
+  fun(): string {
+    let str: string = 'Marvellous Infosystems';
+    return str;
+  }
 }
