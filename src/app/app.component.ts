@@ -18,8 +18,8 @@ import { SecondComponentComponent } from './second-component/second-component.co
   styleUrl: './app.component.css',
 })
 export class AppComponent {
-  fun(): string {
-    let str: string = 'Marvellous Infosystems';
-    return str;
+  public value: any;
+  public fun(): string {
+    return (this.value = 'Educating for a better tomorrow!');
   }
 }
